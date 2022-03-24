@@ -8,7 +8,7 @@ When you use `yield return` you can work each piece of data as you need it, ther
 
 Benchmark result:
 
-![img](./assets/BenchmarkResult.png)
+![img](./assets/YieldReturn2BenchMark.png)
 
 #### Observation
 
