@@ -13,7 +13,10 @@ namespace YieldReturn2
             var heroesList1 = HeroGenerator.GenerateMany(1_000);
             foreach (var hero in heroesList1)
             {
-                Console.WriteLine($"{hero.Id}: {hero.Name}");
+                if (hero.Id < 500)
+                    Console.WriteLine($"{hero.Id}: {hero.Name}");
+                else
+                    break;
             }
         }
         
@@ -34,9 +37,13 @@ namespace YieldReturn2
         {
             var heroesList1 = HeroGenerator.GenerateManyImproved(
                 1_000);
+            
             foreach (var hero in heroesList1)
             {
-                Console.WriteLine($"{hero.Id}: {hero.Name}");
+                if (hero.Id < 500)
+                    Console.WriteLine($"{hero.Id}: {hero.Name}");
+                else
+                    break;
             }
         }
         
